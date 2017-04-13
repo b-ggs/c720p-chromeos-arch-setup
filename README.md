@@ -93,6 +93,11 @@ I initially allocated 8 GB for Chrome OS, but as I was using it, I kept getting 
 
 ## Post-installation
 
+### Video drivers ([Arch Wiki](https://wiki.archlinux.org/index.php/intel_graphics))
+
+- Install `xf86-video-intel` and `mesa`.
+- Add the contents of `20-intel.conf` in this repository into `/etc/X11/xorg.conf.d/20-intel.conf`.
+
 ### Fix wakeup from suspend on lid close ([Arch Wiki](https://wiki.archlinux.org/index.php/Acer_C720_Chromebook#Fix_wakeup_from_suspend_on_lid_close))
 
 - Refer to `disable-touchpad-wakeup.conf` in this repository.
