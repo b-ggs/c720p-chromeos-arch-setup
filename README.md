@@ -104,7 +104,7 @@ Since the power button is directly above the backspace, you can accidentally hit
 
 Not sure how this is handled by other window managers, but for i3, it turns of the machine without any warning.
 
-To disable this, edit `/etc/systemd/logind.conf`, and change `HandlePowerKey` to `ignore`.
+To disable this, edit `/etc/systemd/logind.conf`, uncomment the line with `HandlePowerKey`, and the value to `ignore`.
 
 ### Fix wakeup from suspend on lid close ([Arch Wiki](https://wiki.archlinux.org/index.php/Acer_C720_Chromebook#Fix_wakeup_from_suspend_on_lid_close))
 
