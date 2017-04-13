@@ -91,6 +91,12 @@ I initially allocated 8 GB for Chrome OS, but as I was using it, I kept getting 
 
 - Install Arch Linux as you normally would, specifying `/dev/sda7` to mount to `/mnt`.
 
+### Install GRUB
+
+- Install `grub`
+- Run `grub-install /dev/sda`
+- Run `grub-mkconfig -o /boot/grub/grub.cfg`
+
 ## Post-installation
 
 ### Video drivers ([Arch Wiki](https://wiki.archlinux.org/index.php/intel_graphics))
