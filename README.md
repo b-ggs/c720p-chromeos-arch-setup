@@ -98,6 +98,14 @@ I initially allocated 8 GB for Chrome OS, but as I was using it, I kept getting 
 - Install `xf86-video-intel` and `mesa`.
 - Add the contents of `20-intel.conf` in this repository into `/etc/X11/xorg.conf.d/20-intel.conf`.
 
+### Disable power button shutdown ([Reddit](https://www.reddit.com/r/archlinux/comments/40mm4v/power_button_is_really_close_to_the_backspace/))
+
+Since the power button is directly above the backspace, you can accidentally hit the power button by mistake, shutting down your system.
+
+Not sure how this is handled by other window managers, but for i3, it turns of the machine without any warning.
+
+To disable this, edit `/etc/systemd/logind.conf`, and change `HandlePowerKey` to `ignore`.
+
 ### Fix wakeup from suspend on lid close ([Arch Wiki](https://wiki.archlinux.org/index.php/Acer_C720_Chromebook#Fix_wakeup_from_suspend_on_lid_close))
 
 - Refer to `disable-touchpad-wakeup.conf` in this repository.
