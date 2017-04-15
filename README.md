@@ -104,6 +104,11 @@ I initially allocated 8 GB for Chrome OS, but as I was using it, I kept getting 
 - Install `xf86-video-intel` and `mesa`.
 - Add the contents of `20-intel.conf` in this repository into `/etc/X11/xorg.conf.d/20-intel.conf`.
 
+### Trackpad configs ([Arch Wiki](https://wiki.archlinux.org/index.php/Acer_C720_Chromebook#Touchpad_Configuration))
+
+- Install `xf86-input-synaptics`.
+- Add the contents of `50-cros-touchpad.conf` in this repository into `/etc/X11/xorg.conf.d/50-cros-touchpad.conf`.
+
 ### Disable power button shutdown ([Reddit](https://www.reddit.com/r/archlinux/comments/40mm4v/power_button_is_really_close_to_the_backspace/))
 
 Since the power button is directly above the backspace, you can accidentally hit the power button by mistake, shutting down your system.
